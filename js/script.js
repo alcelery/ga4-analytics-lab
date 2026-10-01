@@ -14,7 +14,7 @@
     // Это защита от случайной отправки неполностью настроенного примера.
     if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(leadForm.action)) {
       event.preventDefault();
-      document.querySelector('#form-status').textContent = 'Сначала укажите URL опубликованного Apps Script Web App.';
+      document.querySelector('#form-status').textContent = 'https://script.google.com/macros/s/AKfycbymGbo32XuQBcH6fOHAl_c9sNoxWU436OZg9V1RaRVfiasZir_PO58I5_Fh7CMdeBCazw/exec';
       return;
     }
     // Повторная доставка той же заявки сохраняет ID. Новый ID — после reset.
